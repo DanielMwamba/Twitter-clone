@@ -212,6 +212,33 @@ body{
     font-size: 1rem;
 }
 
+.icon-button {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: grey;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Styles pour l'icône au repos */
+  .icon-normal {
+    filter: none; /* Laisser l'icône de la couleur originale */
+  }
+  
+  /* Styles pour l'icône au survol */
+  .icon-hovered {
+    filter: brightness(0.8); 
+    
+   
+  }
+
 
 
 

@@ -1,5 +1,5 @@
 import { profilePhoto, image1, imageTweet, imgTwetter } from "../images";
-import { vector, reply, retweet, react, share } from "../icons";
+import { vector} from "../icons";
 
 const tweetsData = [
   {
@@ -18,13 +18,6 @@ const tweetsData = [
 
     },
 
-    iconAction: {
-      iconReply: reply,
-      iconRetweet: retweet,
-      iconReact: react,
-      iconShare: share,
-
-    }
   },
 
   {
@@ -43,13 +36,7 @@ const tweetsData = [
 
     },
 
-    iconAction: {
-      iconReply: reply,
-      iconRetweet: retweet,
-      iconReact: react,
-      iconShare: share,
-
-    }
+  
   },
 
   {
@@ -68,13 +55,7 @@ const tweetsData = [
 
     },
 
-    iconAction: {
-      iconReply: reply,
-      iconRetweet: retweet,
-      iconReact: react,
-      iconShare: share,
-
-    }
+   
   },
 
   {
@@ -93,13 +74,7 @@ const tweetsData = [
 
     },
 
-    iconAction: {
-      iconReply: reply,
-      iconRetweet: retweet,
-      iconReact: react,
-      iconShare: share,
 
-    }
   },
 
   {
@@ -118,13 +93,6 @@ const tweetsData = [
 
     },
 
-    iconAction: {
-      iconReply: reply,
-      iconRetweet: retweet,
-      iconReact: react,
-      iconShare: share,
-
-    }
   },
 
 
