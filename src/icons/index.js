@@ -17,3 +17,5 @@ export { default as lists } from './Lists.png';
 export { default as twitter } from './Twitter.png';
 export { default as profile } from './Profile.png';
 export { default as home } from './Home.png';
+export { default as iconprivate } from './Private.png';
+export { default as iconsetting } from './Settings.png';

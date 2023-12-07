@@ -1,4 +1,5 @@
 export { default as Header } from "./header";
+export { default as Layout } from "./layout";
 export { default as Avatar } from "./avatar";
 export { default as TweetEditor } from "./tweet-editor";
 export { default as TweetEditorForm } from "./tweet-editor-form";
@@ -11,4 +12,5 @@ export { default as Tweet } from "./tweet" ;
 export { default as Tweets } from "./tweets" ;
 export { default as sidebarLeft } from "./sidebar-left" ;
 export { default as IconAction } from "./icon-action" ;
+export { default as Trends } from "./trends" ;
 

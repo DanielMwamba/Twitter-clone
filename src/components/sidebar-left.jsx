@@ -1,10 +1,15 @@
-import { Button } from '../components';
-import {message, explore, lists, twitter, notification, bookmarks, profile, more, home} from '../icons'
+import { Button, Avatar } from '../components';
+import {profilePhoto} from '../images'
+import {message, explore, lists, twitter, notification, bookmarks, profile, more, home, iconprivate} from '../icons'
+
+
 
 
 
 function SidebarLeft() {
     return (
+
+    <>
         <div>
             <div className='sidebar-nav'>
                 <img src={twitter} alt="" />
@@ -51,7 +56,10 @@ function SidebarLeft() {
             </div>
 
             <Button style={"sidebar-left-button"}/>
+           
         </div>
+        
+    </>
     )
 }
 
