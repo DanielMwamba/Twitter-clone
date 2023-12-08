@@ -322,6 +322,11 @@ aside {
 
 }
 
+.avatar-account-follow img{
+    width: 50px;
+    border: none;
+}
+
 .info-user {
     font-size: 0.8rem;
     margin-right: auto;

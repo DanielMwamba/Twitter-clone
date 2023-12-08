@@ -1,6 +1,6 @@
-function Avatar({ source }) {
+function Avatar({ source,}) {
   return (
-    <div className="avatar">
+    <div className={"avatar"}>
       <img src={source} alt="avatar" />
     </div>
   );
