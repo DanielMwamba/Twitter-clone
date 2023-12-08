@@ -10,7 +10,7 @@ function SidebarLeft() {
     return (
 
     <>
-        <div>
+        <div className='sidebar'>
             <div className='sidebar-nav'>
                 <img src={twitter} alt="" />
             </div>

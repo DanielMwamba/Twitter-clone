@@ -194,6 +194,11 @@ body {
   gap: 20px;
 }
 
+.sidebar {
+  display: inline-block;
+  text-align: center;
+}
+
 .sidebar-nav {
   display: flex;
   gap: 20px;
@@ -209,6 +214,7 @@ body {
   background-color: #1d9bf0;
   color: white;
   font-size: 1rem;
+ 
 }
 
 .icon-button {
@@ -226,37 +232,110 @@ body {
 }
 
 .search-twitter-input {
-  height: 40px;
+    
+    border: none;
+    width: 300px;
+    height: 45px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #202327;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside{
   width: 100%;
-  border-radius: 80px;
-  border: none;
-  font-size: 1rem;
-  background-color: rgb(54, 54, 54);
-  color: white;
-  resize: none;
-  padding: 5px 0 0 0;
-  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .trends {
-  text-align: center;
+  width: 100% ;
+}
+
+.trend {
+  
   font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
 
-.trend-list {
+
+
+.trend-title {
+  color: #D9D9D9;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.trends-list{
+    border-radius: 15px ;
+    background-color: #202327;
+    margin-top: 10px;
+    width: 300px;
+    padding: 20px;
+}
+
+
+.trendings-title{
+    display: flex;
+    align-items: center;
+    gap: 95px;
+    color: #D9D9D9;
+    font-weight: bold;
+}
+
+.trending-description{
   display: flex;
+  margin: 20px 0 0 ;
+  color: #bbbfc4;
   justify-content: space-between;
-  align-content: center;
-  background-color: rgb(54, 54, 54);
+}
+
+.trending-description p{
+  color: #bbbfc4;
+  
+}
+
+
+.follows {
+  background-color: #202327;
   border-radius: 15px;
-
-  padding: 1rem 0.5rem;
+  padding: 10px;
+  margin: 10px 0;
+  max-width: 300px;
 }
 
-.trend-list-title {
+
+.follow-list h3{
+  margin-left: 5px;
+}
+
+.account-follow{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  
 }
+
+.info-user{
+  font-size: 0.8rem;
+  margin-right: auto;
+}
+
+.btn-follow {
+  text-transform: capitalize;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #D9D9D9;
+  color: #050505;
+  font-size: .8rem;
+}
+
+
 
 .icon-button svg {
   fill: #6e767d;

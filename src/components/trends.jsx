@@ -1,28 +1,22 @@
-import { iconsetting } from "../icons";
+import { Trendings, Follows } from "../components";
+
 function Trends() {
-    return (
+  return (
 
-        <div className="trends">
-              <input
-                className="search-twitter-input"
-                placeholder="Search Twitter"
-                type="text"
-                name="search-input"
-                id="search-input" />
-
-            <div className="trend-list">
-
-                <div className="trend-list-content">
-
-                </div>
-                <h4>Trend for you</h4>
-                <img src={iconsetting}></img>
-           
-                
-            </div>
-        </div>
-      
-    )
+    <aside className="trends trend">
+      <div>
+        <input
+          className="search-twitter-input"
+          placeholder="Search Twitter"
+          type="text"
+          name="search-input"
+          id="search-input"
+        />
+        <Trendings />
+        <Follows />
+      </div>
+    </aside>
+  );
 }
 
 export default Trends;

@@ -13,4 +13,10 @@ export { default as Tweets } from "./tweets" ;
 export { default as sidebarLeft } from "./sidebar-left" ;
 export { default as IconAction } from "./icon-action" ;
 export { default as Trends } from "./trends" ;
+export { default as Trend } from "./trend" ;
+export { default as InfoUser } from "./info-user" ;
+export { default as Trendings } from "./trendings" ;
+export { default as Follow } from "./follow" ;
+export { default as Follows } from "./follows" ;
+export { default as ButtonFollow } from "./button-follow" ;
 
