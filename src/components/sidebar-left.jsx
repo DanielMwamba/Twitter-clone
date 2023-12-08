@@ -25,12 +25,10 @@ function SidebarLeft() {
             </div>
           </li>
           <li>
-            
             <NavLink className={"sidebar-nav"} to="/">
-                <img src={home} alt="" />
-                <h4>Home</h4>
-              </NavLink>
-            
+              <img src={home} alt="" />
+              <h4>Home</h4>
+            </NavLink>
           </li>
 
           <li>
@@ -41,10 +39,10 @@ function SidebarLeft() {
           </li>
 
           <li>
-          <NavLink className={"sidebar-nav"} to="/notifications">
-                <img src={home} alt="" />
-                <h4>Notifications</h4>
-              </NavLink>
+            <NavLink className={"sidebar-nav"} to="/notifications">
+              <img src={home} alt="" />
+              <h4>Notifications</h4>
+            </NavLink>
           </li>
           <li>
             <div className="sidebar-nav">

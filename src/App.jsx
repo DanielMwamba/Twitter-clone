@@ -11,13 +11,12 @@ import {
 import {
   Home,
   ProfileUser,
-  Notifications, 
+  Notifications,
   Messages,
   Explore,
   Bookmarks,
   More,
   Lists,
-  
 } from "./pages";
 
 import Layout from "./components/layout.jsx";

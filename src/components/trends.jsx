@@ -2,7 +2,6 @@ import { Trendings, FollowerList } from "../components";
 
 function Trends() {
   return (
-
     <aside className="trends trend">
       <div>
         <input

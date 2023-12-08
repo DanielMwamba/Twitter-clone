@@ -1,10 +1,5 @@
-
-function Button({style}) {
-    return (
-        
-        <button className={style}>Follow</button>
-            
-    )
+function Button({ style }) {
+  return <button className={style}>Follow</button>;
 }
 
-export default Button ;
+export default Button;
