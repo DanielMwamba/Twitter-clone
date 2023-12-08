@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tweet } from "../components"
-import tweetsData from "./tweetsData";
+import tweetsData from "../utils/tweetsData";
 
 
 function Tweets() {

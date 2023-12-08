@@ -1,4 +1,4 @@
-import { Trendings, Follows } from "../components";
+import { Trendings, FollowerList } from "../components";
 
 function Trends() {
   return (
@@ -13,7 +13,7 @@ function Trends() {
           id="search-input"
         />
         <Trendings />
-        <Follows />
+        <FollowerList />
       </div>
     </aside>
   );

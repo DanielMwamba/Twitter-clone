@@ -1,13 +1,13 @@
-import {Avatar, InfoUser, ButtonFollow} from "../components"
+import {Avatar, InfoUser, ButtonFollow} from "."
 
-function Follow({user, title, srcImg}) {
+function Follower({user, title, srcImg}) {
     return (
         <div className="account-follow">
             <Avatar source={srcImg} />
             <InfoUser name={user} title={title} />
-            <ButtonFollow style={"button"}/>
+            <ButtonFollow style={"btn-follow"}/>
         </div>
     )
 }
 
-export default Follow;
+export default Follower;
