@@ -35,6 +35,12 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profile/" element={<ProfileUser />} />
           <Route path="/notifications" element={<Notifications />} />
+          <Route path="/messages" element={<Messages />} />
+          <Route path="/explore" element={<Explore/>} />
+          <Route path="/boolmarks" element={<Bookmarks />} />
+          <Route path="/more" element={<More />} />
+          <Route path="/lists" element={<Lists />} />
+
         </Routes>
 
         <Trends />

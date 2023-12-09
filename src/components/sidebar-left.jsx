@@ -13,6 +13,7 @@ import {
   home,
   iconprivate,
 } from "../icons";
+import { Bookmarks } from "../pages";
 
 function SidebarLeft() {
   return (
@@ -32,49 +33,49 @@ function SidebarLeft() {
           </li>
 
           <li>
-            <div className="sidebar-nav">
+            <NavLink className={"sidebar-nav"} to="/explore">
               <img src={explore} alt="" />
               <h4>Explore</h4>
-            </div>
+            </NavLink>
           </li>
 
           <li>
             <NavLink className={"sidebar-nav"} to="/notifications">
-              <img src={home} alt="" />
+              <img src={notification} alt="" />
               <h4>Notifications</h4>
             </NavLink>
           </li>
           <li>
-            <div className="sidebar-nav">
+            <NavLink className={"sidebar-nav"} to="/messages">
               <img src={message} alt="" />
               <h4>Messages</h4>
-            </div>
+            </NavLink>
           </li>
 
           <li>
-            <div className="sidebar-nav">
+            <NavLink className={"sidebar-nav"} to="/bookmarks">
               <img src={bookmarks} alt="" />
               <h4>Bookmarks</h4>
-            </div>
+            </NavLink>
           </li>
           <li>
-            <div className="sidebar-nav">
+            <NavLink className={"sidebar-nav"} to="/lists">
               <img src={lists} alt="" />
               <h4>Lists</h4>
-            </div>
+            </NavLink>
           </li>
 
           <li>
-            <div className="sidebar-nav">
+            <NavLink className={"sidebar-nav"} to="/profile/:username">
               <img src={profile} alt="" />
               <h4>Profile</h4>
-            </div>
+            </NavLink>
           </li>
           <li>
-            <div className="sidebar-nav">
+            <NavLink className={"sidebar-nav"} to="/more">
               <img src={more} alt="" />
               <h4>More</h4>
-            </div>
+            </NavLink>
           </li>
         </ul>
 
