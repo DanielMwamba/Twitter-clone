@@ -1,5 +1,5 @@
-import { Trend } from "../components";
-import { iconsetting } from "../icons";
+import { Trend } from "..";
+import { iconsetting } from "../../icons";
 
 function Trends() {
   return (

@@ -1,4 +1,4 @@
-import { Trendings, FollowerList } from "../components";
+import { Trendings, FollowerList } from "..";
 
 function Trends() {
   return (

@@ -1,4 +1,4 @@
-import { more2 } from "../icons";
+import { more2 } from "../../icons";
 
 function Trend({ country, subject }) {
   return (

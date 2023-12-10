@@ -1,5 +1,5 @@
-import { Follower } from ".";
-import { imgTwetter, image1, cnn } from "../images";
+import { Follower } from "..";
+import { imgTwetter, image1, cnn } from "../../images";
 
 function FollowerList() {
   return (

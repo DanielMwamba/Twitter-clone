@@ -19,9 +19,8 @@ import {
   Lists,
 } from "./pages";
 
-import Layout from "./components/layout.jsx";
-import SidebarLeft from "./components/sidebar-left.jsx";
-import Trends from "./components/trends.jsx";
+import {Layout, SidebarLeft} from "./components";
+import Trends from "./components/trends/trends.jsx";
 
 import("./style/reset.css");
 import("./style/App.css");

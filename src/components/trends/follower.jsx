@@ -1,4 +1,4 @@
-import { Avatar, InfoUser, ButtonFollow } from ".";
+import { Avatar, InfoUser, ButtonFollow } from "..";
 
 function Follower({ user, title, srcImg }) {
   return (
