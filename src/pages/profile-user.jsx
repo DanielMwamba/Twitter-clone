@@ -1,9 +1,13 @@
-
-
+import {Header, Avatar} from "../components/"
+import { profile } from "../images/"
 
 function ProfileUser() {
+
     return(
-        <h1>PROFILE</h1>
+        <main className="timeline">
+            <Header title={"Profile"}/>
+            <Avatar source={profile} />
+        </main>
     )
 }
 

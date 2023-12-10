@@ -1,8 +1,10 @@
-
-function Messages() {
+import {Header} from "../components/"
+function Explore() {
     return(
-        <h1>MESSAGES</h1>
+        <main className="timeline">
+            <Header title={"Lists"}/>
+        </main>
     )
 }
 
-export default Messages
+export default Explore

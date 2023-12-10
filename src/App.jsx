@@ -1,3 +1,4 @@
+import tweetsData from "./utils/tweetsData.js";
 import {
   BrowserRouter,
   Routes,
@@ -11,6 +12,7 @@ import {
 import {
   Home,
   ProfileUser,
+  ProfileTweet,
   Notifications,
   Messages,
   Explore,
@@ -32,11 +34,12 @@ export default function App() {
         <SidebarLeft />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile/" element={<ProfileUser />} />
+          <Route path="/profile" element={<ProfileUser profile={tweetsData} />} />
+          <Route path=":title" element={<ProfileTweet tweet={tweetsData} />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/explore" element={<Explore/>} />
-          <Route path="/boolmarks" element={<Bookmarks />} />
+          <Route path="/bookmarks" element={<Bookmarks />} />
           <Route path="/more" element={<More />} />
           <Route path="/lists" element={<Lists />} />
 

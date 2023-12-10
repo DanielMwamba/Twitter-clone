@@ -6,3 +6,4 @@ export { default as Bookmarks } from "./bookmarks";
 export { default as Lists } from "./list";
 export { default as ProfileUser } from "./profile-user";
 export { default as More } from "./more";
+export { default as ProfileTweet } from "./tweet-profile";

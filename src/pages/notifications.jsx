@@ -1,8 +1,10 @@
-
-function Notifications() {
+import {Header} from "../components/"
+function Explore() {
     return(
-        <h1>NOTIFICATIONS</h1>
+        <main className="timeline">
+            <Header title={"Notifications"}/>
+        </main>
     )
 }
 
-export default Notifications
+export default Explore

@@ -1,7 +1,9 @@
-
+import {Header} from "../components/"
 function Explore() {
     return(
-        <h1>EXPLORE</h1>
+        <main className="timeline">
+            <Header title={"Explore"}/>
+        </main>
     )
 }
 

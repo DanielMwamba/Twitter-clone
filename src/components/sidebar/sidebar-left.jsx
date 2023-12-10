@@ -13,7 +13,7 @@ import {
   home,
   iconprivate,
 } from "../../icons";
-import { Bookmarks } from "../../pages";
+
 
 function SidebarLeft() {
   return (
@@ -66,7 +66,7 @@ function SidebarLeft() {
           </li>
 
           <li>
-            <NavLink className={"sidebar-nav"} to="/profile/:username">
+            <NavLink className={"sidebar-nav"} to="/profile">
               <img src={profile} alt="" />
               <h4>Profile</h4>
             </NavLink>

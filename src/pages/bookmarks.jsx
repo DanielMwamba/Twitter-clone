@@ -1,8 +1,10 @@
-
-function Bookmarks() {
+import {Header} from "../components/"
+function Explore() {
     return(
-        <h1>BOOKMARKS</h1>
+        <main className="timeline">
+            <Header title={"Bookmarks"}/>
+        </main>
     )
 }
 
-export default Bookmarks
+export default Explore

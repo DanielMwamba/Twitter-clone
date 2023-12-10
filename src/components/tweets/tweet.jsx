@@ -1,20 +1,24 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Avatar } from "..";
 import { IconAction } from "..";
-import { reply, retweet, like, share } from "../../icons";
 
 function Tweet({ tweet }) {
   return (
     <>
       <div className="tweet">
         <div className="tweet-avatar">
-          <Avatar source={tweet.avatar} />
+          <NavLink to={`/${tweet.title}`}>
+            <Avatar source={tweet.avatar} />
+          </NavLink>
         </div>
 
         <div className="tweet-content">
           <div className="tweet-body">
             <div className="tweet-title">
-              <p className="tweet-title-author"> {tweet.title} </p>
+              <NavLink to={`/${tweet.title}`}>
+                <p className="tweet-title-author"> {tweet.title} </p>
+              </NavLink>
 
               <span>
                 {" "}
@@ -46,6 +50,7 @@ function Tweet({ tweet }) {
                   </svg>
                 }
                 details={tweet.details.actionCountComments}
+                tooltiptext={"Reply"}
               />
             </span>
 
@@ -63,6 +68,7 @@ function Tweet({ tweet }) {
                   </svg>
                 }
                 details={tweet.details.actionCountRetweets}
+                tooltiptext={"Repost"}
               />
             </span>
 
@@ -80,6 +86,7 @@ function Tweet({ tweet }) {
                   </svg>
                 }
                 details={tweet.details.actionCountLikes}
+                tooltiptext={"Like"}
               />
             </span>
 
@@ -98,6 +105,7 @@ function Tweet({ tweet }) {
                   </svg>
                 }
                 details={tweet.details.actionCountShares}
+                tooltiptext={"Share"}
               />
             </span>
           </div>

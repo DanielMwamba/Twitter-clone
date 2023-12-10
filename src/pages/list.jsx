@@ -1,9 +1,10 @@
-
-
-function Lists() {
+import {Header} from "../components/"
+function Explore() {
     return(
-        <h1>LISTS</h1>
+        <main className="timeline">
+            <Header title={"Lists"}/>
+        </main>
     )
 }
 
-export default Lists
+export default Explore

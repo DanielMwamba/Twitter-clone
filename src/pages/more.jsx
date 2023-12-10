@@ -1,8 +1,10 @@
-
-function More() {
+import {Header} from "../components/"
+function Explore() {
     return(
-        <h1>MORE</h1>
+        <main className="timeline">
+            <Header title={"More"}/>
+        </main>
     )
 }
 
-export default More
+export default Explore
