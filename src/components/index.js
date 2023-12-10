@@ -19,3 +19,4 @@ export { default as Trendings } from "./trends/trendings";
 export { default as Follower } from "./trends/follower";
 export { default as FollowerList } from "./trends/follower-list";
 export { default as ButtonFollow } from "./buttons/button-follow";
+export { default as ShowMore} from "./trends/show-more";

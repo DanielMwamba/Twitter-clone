@@ -1,7 +1,10 @@
-function InfoUser({ name, title }) {
+function InfoUser({ name, title, userVerified}) {
   return (
     <div className="info-user">
-      <p>{title}</p>
+      <span>
+        {title}
+        <img src={userVerified} /> 
+      </span> 
       <p>{name}</p>
     </div>
   );

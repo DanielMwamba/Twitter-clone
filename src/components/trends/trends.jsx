@@ -1,4 +1,4 @@
-import { Trendings, FollowerList } from "..";
+import { Trendings, FollowerList, } from "..";
 
 function Trends() {
   return (
@@ -12,6 +12,7 @@ function Trends() {
           id="search-input"
         />
         <Trendings />
+       
         <FollowerList />
       </div>
     </aside>

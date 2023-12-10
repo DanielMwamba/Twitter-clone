@@ -206,6 +206,7 @@ body {
 .sidebar {
   display: inline-block;
   text-align: center;
+  
 }
 
 .sidebar-nav {
@@ -270,6 +271,10 @@ aside {
   font-size: 1rem;
 }
 
+.trend-description {
+  color: #bbbfc4;
+}
+
 .trends-list {
   border-radius: 15px;
   background-color: #202327;
@@ -288,7 +293,7 @@ aside {
 
 .trending-description {
   display: flex;
-  margin: 20px 0 0;
+  margin: 20px 0 0; 
   color: #bbbfc4;
   justify-content: space-between;
 }
@@ -303,6 +308,15 @@ aside {
   padding: 10px;
   margin: 10px 0;
   max-width: 250px;
+}
+
+.show-more{
+  color: rgb(29, 155, 240);
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  margin-left: 1px;
+  padding-top: 20px;
 }
 
 .account-follow {
@@ -320,6 +334,15 @@ aside {
 .info-user {
   font-size: 0.8rem;
   margin-right: auto;
+}
+
+.info-user p{
+  color:#747a80;
+}
+.info-user span {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .btn-follow {
