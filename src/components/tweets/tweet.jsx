@@ -21,15 +21,13 @@ function Tweet({ tweet }) {
               </NavLink>
 
               <span>
-                {" "}
-                <img src={tweet.imgverified} alt="" />{" "}
+                <img src={tweet.imgverified} alt="" />
               </span>
               <p className="tweet-title-details"> {tweet.titleDescription} </p>
             </div>
 
             <p className="tweet-text"> {tweet.content} </p>
             <div className="tweet-image">
-              {" "}
               <img src={tweet.Image} alt="" />
             </div>
           </div>

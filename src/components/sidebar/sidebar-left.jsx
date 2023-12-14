@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Button, Avatar } from "..";
+import { Button, Settings} from "../index";
 // import { profilePhoto } from '../images'
 import {
   message,
@@ -80,7 +80,9 @@ function SidebarLeft() {
         </ul>
 
         <Button style={"sidebar-left-button"} />
+        <Settings />
       </nav>
+     
     </>
   );
 }

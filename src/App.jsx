@@ -21,9 +21,7 @@ import {
   Lists,
 } from "./pages";
 
-import {Layout, SidebarLeft} from "./components";
-import Trends from "./components/trends/trends.jsx";
-
+import { Layout, SidebarLeft, Trends } from "./components";
 import("./style/reset.css");
 import("./style/App.css");
 
@@ -34,15 +32,17 @@ export default function App() {
         <SidebarLeft />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<ProfileUser profile={tweetsData} />} />
+          <Route
+            path="/profile"
+            element={<ProfileUser profile={tweetsData} />}
+          />
           <Route path=":title" element={<ProfileTweet tweet={tweetsData} />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/messages" element={<Messages />} />
-          <Route path="/explore" element={<Explore/>} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="/bookmarks" element={<Bookmarks />} />
           <Route path="/more" element={<More />} />
           <Route path="/lists" element={<Lists />} />
-
         </Routes>
 
         <Trends />

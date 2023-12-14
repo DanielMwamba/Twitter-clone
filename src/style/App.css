@@ -247,6 +247,13 @@ body {
   font-size: 1rem;
 }
 
+.profile-setting{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
 .icon-button {
   display: flex;
   justify-content: center;

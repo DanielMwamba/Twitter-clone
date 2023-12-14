@@ -1,17 +1,9 @@
-// import { useState } from 'react';
-
-// const IconAction = ({ icon, details }) => {
-//   const [isHovered, setIsHovered] = useState(false);
-
 function IconAction({ icon, details, tooltiptext }) {
   return (
-    <>
-      <button className="icon-button tooltip">
-        {icon} <p className="tweet-actions">{details}</p>
-        <div className="tooltiptext">{tooltiptext}</div>
-      </button>
-      
-    </>
+    <button className="icon-button tooltip">
+      {icon} <p className="tweet-actions">{details}</p>
+      <div className="tooltiptext">{tooltiptext}</div>
+    </button>
   );
 }
 

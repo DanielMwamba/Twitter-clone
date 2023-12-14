@@ -11,6 +11,7 @@ export { default as TweetEditorActions } from "./tweet-editor/tweet-editor-actio
 export { default as Tweet } from "./tweets/tweet";
 export { default as Tweets } from "./tweets/tweets";
 export { default as SidebarLeft } from "./sidebar/sidebar-left";
+export { default as Settings } from "./sidebar/settings";
 export { default as IconAction } from "./tweets/icon-action";
 export { default as Trends } from "./trends/trends";
 export { default as Trend } from "./trends/trend";
