@@ -1,14 +1,16 @@
 import {Avatar, InfoUser} from "../index";
-import {profile} from "../../images/index"
+import {profile} from "../../images/index";
+import { NavLink } from "react-router-dom";
+
 
 function Settings() {
    
-        return (
-            <div className="profile-setting">
-                <Avatar source={profile} />
-                <InfoUser name={"@bradley"} title={"Bradley Ortiz"}/>
-            </div>
-        )
+    return (
+        <NavLink className="profile-setting" to="/profile">
+            <Avatar source={profile} />
+            <InfoUser name={"@bradley"} title={"Bradley Ortiz"}/>
+        </NavLink>
+    )
     
 }
 

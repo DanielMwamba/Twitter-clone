@@ -9,9 +9,6 @@ function Home() {
       <Header title={"Home"}/>
       <TweetEditor />
       <Tweets />
-      
-      
-
     </main>
   );
 }
