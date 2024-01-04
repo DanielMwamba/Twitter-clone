@@ -228,6 +228,11 @@ body {
   display: inline-block;
   text-align: center;
   
+  
+}
+
+.sidebar ul{
+  list-style: none;
 }
 
 .sidebar-nav {
@@ -250,7 +255,8 @@ body {
 .profile-setting{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 2px;
   margin: 20px 0;
 }
 
@@ -281,14 +287,14 @@ body {
 }
 
 aside {
-  width: 100%;
+  width: auto;
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
 .trends {
-  width: 100%;
+  /* width: 100%; */
   font-family: "Inter", sans-serif;
   font-size: 1rem;
 }
@@ -366,11 +372,12 @@ aside {
 
 .info-user p{
   color:#747a80;
+  
 }
 .info-user span {
   display: flex;
   gap: 10px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .btn-follow {
