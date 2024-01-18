@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "5": "^0.0.1",
+    "json-server": "^1.0.0-alpha.19",
     "react-router-dom": "^6.20.1"
   },
   "devDependencies": {

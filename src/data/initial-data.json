@@ -1,0 +1,76 @@
+{
+    "currentUser": {
+        "pseudo": "@bradley",
+        "name": "Bradley Ortiz"
+    },
+
+    "tweets":[
+        {
+            "id": 1,
+            "userAvatar":  "../images/cnn.png",
+            "imageTweet": "../images/tweet-image.png",
+            "userName": "CNN",
+            "infoTweet": "@CNN . 7m",
+            "userVerified": "../icons/Vector.png",
+            "tweetContent": "President Joe Biden touted a new agreement reached whith the European Union to ease Trump-era tariffs on aluminum and steel as a that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+            "actionCountRetweets": 144,
+            "actionCountComments": 57,
+            "actionCountLikes": 184,
+            "actionCountShares": null
+        },
+        {
+            "id": 2,
+            "userAvatar": "../images/image 1.png",
+            "tweetImage": null,
+            "userName": "The New York Times",
+            "infoTweet": "@nytimes . 2h",
+            "userVerified": "../../icons/Vector.png",
+            "tweetContent": "Gardening boomed during the pandemic. Six Black writers share how has helped re-establish, and reimage, a connection to cultivation and the land.",
+            "actionCountRetweets": 48,
+            "actionCountComments": 19,
+            "actionCountLikes": 142,
+            "actionCountShares": null
+        },
+        {
+            "id": 3,
+            "userAvatar": "../images/twitter.png",
+            "tweetImage": null,
+            "userName": "Twitter",
+            "infoTweet": "@Twitter . Oct 29",
+            "userVerified": "../icons/Vector.png",
+            "tweetContent": "Gardening boomed during the pandemic. Six Black writers share how has helped re-establish, and reimage, a connection to cultivation and the land.",
+            "actionCountRetweets": 48,
+            "actionCountComments": 19,
+            "actionCountLikes": 142,
+            "actionCountShares": null
+        },
+        {
+            "id": 4,
+            "userAvatar": "../images/twitter.png",
+            "tweetImage": null,
+            "userName": "Twitter",
+            "infoTweet": "@Twitter . Oct 29",
+            "userVerified": "../icons/Vector.png",
+            "tweetContent": "BIG NEWS lol jk still Twetter.",
+            "actionCountRetweets": "785.4K",
+            "actionCountComments": "118.7K",
+            "actionCountLikes": "3.3M",
+            "actionCountShares": null
+        },
+        {
+            "id": 5,
+            "userAvatar": "../images/twitter.png",
+            "tweetImage": null,
+            "userName": "Twitter",
+            "infoTweet": "@Twitter . Oct 4",
+            "userVerified": "../icons/Vector.png",
+            "tweetContent": "hello litteraly everyone",
+            "actionCountRetweets": "785.4K",
+            "actionCountComments": "118.7K",
+            "actionCountLikes": "3.3M",
+            "actionCountShares": null
+        }
+    ]
+
+ 
+ }
