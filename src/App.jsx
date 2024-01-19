@@ -1,4 +1,5 @@
-import tweetsData from "./utils/tweetsData.js";
+import tweetsData from "./utils/tweetsData";
+import { TweetsProvider } from "./context/TweetContext";
 import {
   BrowserRouter,
   Routes,
@@ -27,6 +28,8 @@ import("./style/App.css");
 
 export default function App() {
   return (
+    
+    <TweetsProvider>
     <BrowserRouter>
       <Layout>
         <SidebarLeft />
@@ -48,5 +51,7 @@ export default function App() {
         <Trends />
       </Layout>
     </BrowserRouter>
+    </TweetsProvider>
+   
   );
 }

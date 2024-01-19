@@ -2,7 +2,7 @@
 import { TweetEditorInput } from "..";
 import { TweetEditorButtons } from "..";
 
-function TweetEditorForm() {
+function TweetEditorForm() { 
 
   return (
     <div className="tweet-editor-form">

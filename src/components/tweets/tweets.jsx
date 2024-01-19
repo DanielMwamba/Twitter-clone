@@ -1,37 +1,34 @@
 import React from "react";
-import {useState, useEffect} from  "react";
+// import {useState, useEffect} from  "react";
 import { Tweet} from "..";
+import { useTweets } from "../../context/TweetContext";
 // import tweetsData from "../../utils/tweetsData";
 
 function Tweets() {
 
+  const {tweets} = useTweets()
 
-  const [tweets, setTweets] = useState([]);
-  const handleAddTweet = (newTweet) => {
-    setTweets([newTweet, ...tweets])
-  }
+  // useEffect(() => {
+  //   const fetchTweets = async () => {
+  //     try {
+  //       const response = await fetch("/src/data/initial-data.json");
+  //       if (!response.ok) {
+  //         throw new Error("Failed to fetch data");
+  //       }
+  //       const data = await response.json();
+  //       setTweets(data.tweets);
+  //     } catch (error) {
+  //       console.error("Error fetching tweets:", error);
+  //     }
+  //   };
 
-  useEffect(() => {
-    const fetchTweets = async () => {
-      try {
-        const response = await fetch("/src/data/initial-data.json");
-        if (!response.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        const data = await response.json();
-        setTweets(data.tweets);
-      } catch (error) {
-        console.error("Error fetching tweets:", error);
-      }
-    };
-
-    fetchTweets();
-  }, []);
+  //   fetchTweets();
+  // }, []);
 
   return (
     <div>
       {tweets.map((tweet) => (
-        <Tweet key={tweet.id} tweet={tweet} />
+        <Tweet key={tweet.id} tweet={tweet}/>
       ))}
     </div>
   );

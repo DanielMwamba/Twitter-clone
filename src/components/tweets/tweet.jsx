@@ -4,7 +4,10 @@ import { Avatar } from "..";
 import { IconAction } from "..";
 
 
-function Tweet({ tweet }) {
+
+function Tweet({tweet}) {
+
+  
   return (
     <>
       <div className="tweet">
