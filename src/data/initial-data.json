@@ -1,7 +1,9 @@
 {
     "currentUser": {
         "pseudo": "@bradley",
-        "name": "Bradley Ortiz"
+        "Username": "Bradley Ortiz",
+        "id": 6,
+        "userAvatar":"../images/profile-photo.png"
     },
 
     "tweets":[

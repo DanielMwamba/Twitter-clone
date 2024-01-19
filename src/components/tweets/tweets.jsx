@@ -1,12 +1,15 @@
 import React from "react";
 import {useState, useEffect} from  "react";
-import { Tweet } from "..";
+import { Tweet} from "..";
 // import tweetsData from "../../utils/tweetsData";
 
 function Tweets() {
 
 
   const [tweets, setTweets] = useState([]);
+  const handleAddTweet = (newTweet) => {
+    setTweets([newTweet, ...tweets])
+  }
 
   useEffect(() => {
     const fetchTweets = async () => {
