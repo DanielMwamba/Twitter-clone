@@ -13,7 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "5": "^0.0.1",
+    "axios": "^1.6.7",
     "json-server": "^1.0.0-alpha.19",
+    "react-hook-form": "^7.50.0",
     "react-router-dom": "^6.20.1"
   },
   "devDependencies": {
