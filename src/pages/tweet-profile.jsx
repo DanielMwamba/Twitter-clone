@@ -1,11 +1,14 @@
 import { useParams } from "react-router-dom";
-import {Header, Avatar} from "../components"
+import {Header, Avatar, Tweets} from "../components"
 
 function ProfileTweet({tweet}) {
    const useParam = useParams();
-   const {title} = useParam;
+   const {userName} = useParam;
+
+   const arr = Object.entries(tweet)
+   console.log(arr);
    
-   const user = tweet.find((user) => user.title === title)
+   const user = arr.find(([key, value]) => key === userName)
 
    return(
     <main className="timeline">

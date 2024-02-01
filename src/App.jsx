@@ -1,5 +1,6 @@
-import tweetsData from "./utils/tweetsData";
-import { TweetsProvider } from "./context/TweetContext";
+
+import { TweetsProvider, useTweets } from "./context/TweetContext";
+import { UserProvider } from "./context/userContext";
 import {
   BrowserRouter,
   Routes,
@@ -27,8 +28,12 @@ import("./style/reset.css");
 import("./style/App.css");
 
 export default function App() {
+
+  const {tweets} = useTweets;
+  const tweetsData = tweets;
+
   return (
-    
+    <UserProvider>
     <TweetsProvider>
     <BrowserRouter>
       <Layout>
@@ -52,6 +57,7 @@ export default function App() {
       </Layout>
     </BrowserRouter>
     </TweetsProvider>
+    </UserProvider>
    
   );
 }
