@@ -30,7 +30,7 @@ export function TweetsProvider ({children}) {
 
     return (
         <TweetsContext.Provider value={{tweets, addTweet}} >
-            {children}
+            {children} text
         </TweetsContext.Provider> 
     );
 } 
