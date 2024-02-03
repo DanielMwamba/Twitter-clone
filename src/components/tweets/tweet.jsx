@@ -6,9 +6,11 @@ import { useTweets } from "../../context/TweetContext";
 
 
 
+
 function Tweet({tweet}) {
 
  const {tweets, toogleLike} = useTweets()
+
   
   return (
     <>
@@ -80,6 +82,7 @@ function Tweet({tweet}) {
               <IconAction 
                 
                 toogle={() => toogleLike(tweet.id)} 
+                isLiked={tweet.isLiked}
                 icon={
                   <svg
                     width="20"

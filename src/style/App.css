@@ -397,9 +397,15 @@ aside {
 
 .icon-button svg {
   fill: #6e767d;
-  transition: fill 0.3 ease;
-  /* stroke: red; */
+  transition: transform 0.1s ease, fill 0.2 ease;
 }
+
+.icon-button .tooltip .cliked svg {
+  fill: blue;
+  stroke: rgb(237, 38, 85);
+}
+
+
 
 .comment-icon:hover p {
   /* color: rgb(23, 159, 238); */
