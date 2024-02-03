@@ -1,6 +1,6 @@
-function IconAction({ icon, details, tooltiptext }) {
+function IconAction({ icon, details, tooltiptext, toogle }) {
   return (
-    <button className="icon-button tooltip">
+    <button onClick={toogle} className="icon-button tooltip">
       {icon} <p className="tweet-actions">{details}</p>
       <div className="tooltiptext">{tooltiptext}</div>
     </button>

@@ -2,11 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Avatar } from "..";
 import { IconAction } from "..";
+import { useTweets } from "../../context/TweetContext";
 
 
 
 function Tweet({tweet}) {
 
+ const {tweets, toogleLike} = useTweets()
   
   return (
     <>
@@ -75,7 +77,9 @@ function Tweet({tweet}) {
             </span>
 
             <span className="tweet-action like-icon">
-              <IconAction
+              <IconAction 
+                
+                toogle={() => toogleLike(tweet.id)} 
                 icon={
                   <svg
                     width="20"
