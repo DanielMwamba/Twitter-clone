@@ -449,3 +449,7 @@ a {
 a:hover {
   color: #555;
 }
+
+.msg-error{
+  color: red;
+}

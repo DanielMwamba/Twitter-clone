@@ -55,9 +55,9 @@ function TweetEditorInput() {
         }})}
 
     />
-    {errors.content && <span>{errors.content.message}</span>}
+    {errors.tweetContent && <p className="msg-error">{errors.tweetContent.message}</p>}
 
-    {errors.content === "maxLength" && <span></span>}
+   
     <Button style={"button"} typeBtn={"submit"} />
     </form>
    
