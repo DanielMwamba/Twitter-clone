@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Button } from "..";
 import { useForm} from "react-hook-form";
 import axios from "axios";
@@ -9,21 +9,23 @@ import { data } from "autoprefixer";
 function TweetEditorInput() {
 
   const {addTweet} = useTweets();
-  // const {userData} = useUser()
+  const {currentUser} = useUser() 
 
   const {register, handleSubmit, reset, formState:{errors}} = useForm();
 
   const onSubmit = async(data) => {
     try {
       const tweetData = {
+        userVerfied : currentUser.userVerfied,
+        userName : currentUser.userName,
+        infoTweet : currentUser.userInfo,
+        avatar : currentUser.userAvatar,
         tweetContent : data.tweetContent,
-        userVerfied : true,
-        userName : "Bradley Ortiz",
-        infoTweet : "@bradley",
-        likes : 0,
-        shares : 0,
+        retweets: 0,
         comments : 0,
-        retweets : 0,
+        likes : 0,
+        shares : 0,  
+ 
         
       };
 
@@ -33,7 +35,7 @@ function TweetEditorInput() {
       addTweet(response.data); 
       reset();
 
-    } catch (error) {
+    } catch (error) { 
       console.error("Erreur lors de l'envoi du tweet :", error);
       alert("echouer")
     }

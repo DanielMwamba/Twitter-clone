@@ -1,20 +1,28 @@
 import { useParams } from "react-router-dom";
-import {Header, Avatar, Tweets} from "../components"
+import { useTweets } from "../context/TweetContext";
+import { Tweet } from "../components";
 
-function ProfileTweet({tweet}) {
-   const useParam = useParams();
-   const {userName} = useParam;
 
-   const arr = Object.entries(tweet)
-   console.log(arr);
+function ProfileTweet() {
+
+   const {userName} = useParams();
    
-   const user = arr.find(([key, value]) => key === userName)
+  let {tweets} = useTweets()
+
+  const userTweets = tweets.filter(tweet => tweet.userName === userName)
+  
 
    return(
-    <main className="timeline">
-        <Header title={"Profile"}/>
-        <Avatar source={user.avatar} />
+    <>
+     <main className="timeline">
+         
+      {userTweets.map((tweet) => (
+        <Tweet key={tweet.id} tweet={tweet}/>
+      ))}
+    
     </main>
+    </>
+   
 )
 }
 

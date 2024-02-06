@@ -16,7 +16,7 @@ function Tweet({tweet}) {
     <>
       <div className="tweet">
         <div className="tweet-avatar">
-          <NavLink to={`/${tweet.userName}`}>
+          <NavLink to={`/profile/${tweet.userName}`}>
             <Avatar source={tweet.avatar} />
           </NavLink>
         </div>
@@ -24,7 +24,7 @@ function Tweet({tweet}) {
         <div className="tweet-content">
           <div className="tweet-body">
             <div className="tweet-title">
-              <NavLink to={`/${tweet.userName}`}>
+              <NavLink to={`/profile/${tweet.userName}`}>
                 <p className="tweet-title-author"> {tweet.userName} </p>
               </NavLink>
 

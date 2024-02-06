@@ -1,7 +1,8 @@
 import {Header, Avatar} from "../components/"
-import { profile } from "../images/"
+import { profile } from "../images/";
 
 function ProfileUser() {
+
 
     return(
         <main className="timeline">

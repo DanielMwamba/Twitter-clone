@@ -8,21 +8,17 @@ export function useUser() {
 }
 
 export function UserProvider ({children}) {
-    const [userData, setUserData] = useState(null);
+    const [currentUser, setCurrentUser] = useState({
+
+        userVerfied : true,
+        userName : "Bradley Ortiz",
+        userInfo : "@bradley . 2min",
+        userAvatar : "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/800.jpg",
+    });
     
-    useEffect(() => {
-        axios.get("https://65ba44e7b4d53c06655271e6.mockapi.io/contact/v1/user")
-        .then(response => {
-            setUserData(response.data);
-            console.log(response.data)
-        })
-        .catch(error => {
-            console.error("Erreur lors de la récuperation des données de l'utilisateur :", error);
-        })
-    }, []);
 
     return (
-        <UserContext.Provider value={{userData}}>
+        <UserContext.Provider value={{currentUser}}>
             {children}
         </UserContext.Provider>
     )
