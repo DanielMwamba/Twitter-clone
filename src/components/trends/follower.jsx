@@ -1,11 +1,12 @@
 import { Avatar, InfoUser, ButtonFollow } from "..";
+import { vector } from "../../icons";
 
 
-function Follower({ user, title, srcImg, profileVerified }) {
+function Follower({ user, title, srcImg, profileVerified,tweet }) {
   return (
     <div className="account-follow">
-      <Avatar source={srcImg} />
-      <InfoUser name={user} title={title} userVerified={profileVerified}/>
+      <Avatar source={tweet.userAvatar} />
+      <InfoUser name={tweet.userName} title={title} userVerified={vector}/>
       <ButtonFollow style={"btn-follow"} />
     </div>
   );
