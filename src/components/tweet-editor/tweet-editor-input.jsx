@@ -51,6 +51,10 @@ function TweetEditorInput() {
       id="tweet-input"
       {...register( "tweetContent", {
         required : "Le contenu du tweet est requis",
+        pattern: {
+          value: /\S/,
+          message: "Le tweet ne doit pas être vide"
+        },
         maxLength : {
           value : 180,
           message: "Le tweet ne peut pas dépasser 180 caractères"
