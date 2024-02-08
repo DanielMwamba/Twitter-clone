@@ -400,9 +400,14 @@ aside {
   transition: transform 0.1s ease, fill 0.2 ease;
 }
 
-.icon-button .tooltip .cliked svg {
-  fill: blue;
-  stroke: rgb(237, 38, 85);
+.cliked svg {
+  fill: rgb(237, 38, 85);
+  
+}
+
+.cliked p {
+  color: rgb(237, 38, 85);
+  
 }
 
 
