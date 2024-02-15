@@ -397,9 +397,20 @@ aside {
 
 .icon-button svg {
   fill: #6e767d;
-  transition: fill 0.3 ease;
-  /* stroke: red; */
+  transition: transform 0.1s ease, fill 0.2 ease;
 }
+
+.cliked svg {
+  fill: rgb(237, 38, 85);
+  
+}
+
+.cliked p {
+  color: rgb(237, 38, 85);
+  
+}
+
+
 
 .comment-icon:hover p {
   /* color: rgb(23, 159, 238); */
@@ -442,4 +453,8 @@ a {
 
 a:hover {
   color: #555;
+}
+
+.msg-error{
+  color: red;
 }

@@ -8,20 +8,17 @@ export function useUser() {
 }
 
 export function UserProvider ({children}) {
-    const [userData, setUserData] = useState(null);
+    const [currentUser, setCurrentUser] = useState({
+
+        userVerfied : true,
+        userName : "Bradley Ortiz",
+        userInfo : "@bradley . 2min",
+        userAvatar : "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/800.jpg",
+    });
     
-    useEffect(() => {
-        axios.get("")
-        .then(response => {
-            setUserData(response.data);
-        })
-        .catch(error => {
-            console.error("Erreur lors de la récuperation des données de l'utilisateur :", error);
-        })
-    }, []);
 
     return (
-        <UserContext.Provider value={userData}>
+        <UserContext.Provider value={{currentUser}}>
             {children}
         </UserContext.Provider>
     )

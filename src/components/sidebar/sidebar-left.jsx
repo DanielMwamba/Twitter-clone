@@ -1,6 +1,6 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { Button, Settings} from "../index";
-// import { profilePhoto } from '../images'
+import { useUser } from "../../context/userContext";
 import {
   message,
   explore,
@@ -16,6 +16,10 @@ import {
 
 
 function SidebarLeft() {
+
+const {currentUser} = useUser()
+
+
   return (
     <>
       <nav className="sidebar">
@@ -66,7 +70,7 @@ function SidebarLeft() {
           </li>
 
           <li>
-            <NavLink className={"sidebar-nav"} to="/profile">
+            <NavLink className={"sidebar-nav"} to={`/profile/${currentUser.userName}`}>
               <img src={profile} alt="" />
               <h4>Profile</h4>
             </NavLink>

@@ -1,11 +1,13 @@
 import { Avatar } from "..";
-import { profile } from "../../images";
+import { useUser } from "../../context/userContext";
 import { TweetEditorForm } from "..";
 
 function TweetEditor() {
+
+  const {currentUser} = useUser();
   return (
     <div className="tweet-editor">
-      <Avatar source={profile} />
+      <Avatar source={currentUser.userAvatar} />
       <TweetEditorForm />
     </div>
   );

@@ -30,7 +30,7 @@ import("./style/App.css");
 export default function App() {
 
   const {tweets} = useTweets;
-  const tweetsData = tweets;
+
 
   return (
     <UserProvider>
@@ -42,9 +42,9 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route
             path="/profile"
-            element={<ProfileUser profile={tweetsData} />}
+            element={<ProfileUser profile={tweets} />}
           />
-          <Route path=":title" element={<ProfileTweet tweet={tweetsData} />} />
+          <Route path="/profile/:userName" element={<ProfileTweet/>} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/explore" element={<Explore />} />

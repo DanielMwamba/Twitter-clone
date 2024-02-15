@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Button } from "..";
 import { useForm} from "react-hook-form";
 import axios from "axios";
@@ -9,26 +9,35 @@ import { data } from "autoprefixer";
 function TweetEditorInput() {
 
   const {addTweet} = useTweets();
+  const {currentUser} = useUser() 
 
   const {register, handleSubmit, reset, formState:{errors}} = useForm();
-
-  const currentUser = useUser();
 
   const onSubmit = async(data) => {
     try {
       const tweetData = {
-        content : data.content,
-        author : currentUser,
-        creatdAt : new Date()
+        userVerfied : currentUser.userVerfied,
+        userName : currentUser.userName,
+        infoTweet : currentUser.userInfo,
+        avatar : currentUser.userAvatar,
+        tweetContent : data.tweetContent,
+        retweets: 0,
+        comments : 0,
+        likes : 0,
+        shares : 0,  
+ 
+        
       };
 
-      const response = await axios.post("", tweetData);
+      const response = await axios.post("https://65ba44e7b4d53c06655271e6.mockapi.io/contact/v1/tweets", tweetData);
+      alert("sucées")
 
       addTweet(response.data); 
       reset();
 
-    } catch (error) {
+    } catch (error) { 
       console.error("Erreur lors de l'envoi du tweet :", error);
+      alert("echouer")
     }
   }
 
@@ -38,19 +47,23 @@ function TweetEditorInput() {
       className="tweet-editor-input"
       placeholder="What's happening ?"
       type="text"
-      name="content"
+      name="tweetContent"
       id="tweet-input"
-      {...register( "content", {
+      {...register( "tweetContent", {
         required : "Le contenu du tweet est requis",
+        pattern: {
+          value: /\S/,
+          message: "Le tweet ne doit pas être vide"
+        },
         maxLength : {
           value : 180,
           message: "Le tweet ne peut pas dépasser 180 caractères"
         }})}
 
     />
-    {errors.content && <span>{errors.content.message}</span>}
+    {errors.tweetContent && <p className="msg-error">{errors.tweetContent.message}</p>}
 
-    {errors.content === "maxLength" && <span></span>}
+   
     <Button style={"button"} typeBtn={"submit"} />
     </form>
    
