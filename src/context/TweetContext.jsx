@@ -33,7 +33,8 @@ export function TweetsProvider ({children}) {
     useEffect(() => {
         async function fetchTweets() {
             try {
-                const response = await axios.get("https://65ba44e7b4d53c06655271e6.mockapi.io/contact/v1/tweets");
+                const response = await axios.get("https://twitter-clone-api-qwpi.onrender.com/api/tweets");
+                // const response = await axios.get("http://localhost:3000/api/tweets");
                 setTweets(response.data);
                 console.log(response.data) 
             } catch (error) {

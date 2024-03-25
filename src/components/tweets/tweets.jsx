@@ -2,32 +2,26 @@ import React from "react";
 // import {useState, useEffect} from  "react";
 import { Tweet} from "..";
 import { useTweets } from "../../context/TweetContext";
-// import tweetsData from "../../utils/tweetsData";
+import { useUser } from "../../context/userContext"
 
 function Tweets() {
 
-  const {tweets} = useTweets()
+  const {tweets} = useTweets();
+  const {users} = useUser();
 
-  // useEffect(() => {
-  //   const fetchTweets = async () => {
-  //     try {
-  //       const response = await fetch("/src/data/initial-data.json");
-  //       if (!response.ok) {
-  //         throw new Error("Failed to fetch data");
-  //       }
-  //       const data = await response.json();
-  //       setTweets(data.tweets);
-  //     } catch (error) {
-  //       console.error("Error fetching tweets:", error);
-  //     }
-  //   };
+const getFiveUsers = users.slice(0, 5)
+console.log(getFiveUsers);
 
-  //   fetchTweets();
-  // }, []);
+const usersWithTweets = getFiveUsers.map(user => ({
+  ...user,
+  tweet: tweets.find(tweet => tweet.author === user.id)
+}))
+
+console.log(usersWithTweets);
 
   return (
     <div>
-      {tweets.map((tweet) => (
+      {usersWithTweets.map((tweet) => (
         <Tweet key={tweet.id} tweet={tweet}/>
       ))}
     </div>

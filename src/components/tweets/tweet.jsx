@@ -16,27 +16,27 @@ function Tweet({tweet}) {
     <>
       <div className="tweet">
         <div className="tweet-avatar">
-          <NavLink to={`/profile/${tweet.userName}`}>
-            <Avatar source={tweet.avatar} />
+          <NavLink to={`/profile/${tweet.name}`}>
+            <Avatar source={tweet.profilePicture} />
           </NavLink>
         </div>
 
         <div className="tweet-content">
           <div className="tweet-body">
             <div className="tweet-title">
-              <NavLink to={`/profile/${tweet.userName}`}>
-                <p className="tweet-title-author"> {tweet.userName} </p>
+              <NavLink to={`/profile/${tweet.name}`}>
+                <p className="tweet-title-author"> {tweet.name} </p>
               </NavLink>
 
               <span>
                 <img src={tweet.userVerified} alt="" />
               </span>
-              <p className="tweet-title-details"> {tweet.infoTweet} </p>
+              <p className="tweet-title-details"> {tweet.handle} </p>
             </div>
 
-            <p className="tweet-text"> {tweet.tweetContent} </p>
+            <p className="tweet-text"> {tweet.tweet.text} </p>
             <div className="tweet-image">
-              <img src={tweet.imageTweet} alt="" />
+              <img src={tweet.tweet.media} alt="" />
             </div>
           </div>
 
