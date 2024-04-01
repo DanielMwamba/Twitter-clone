@@ -2,7 +2,8 @@ import React from "react";
 // import {useState, useEffect} from  "react";
 import { Tweet} from "..";
 import { useTweets } from "../../context/TweetContext";
-import { useUser } from "../../context/userContext"
+import { useUser } from "../../context/userContext";
+
 
 function Tweets() {
 
@@ -17,7 +18,7 @@ const usersWithTweets = getFiveUsers.map(user => ({
   tweet: tweets.find(tweet => tweet.author === user.id)
 }))
 
-console.log(usersWithTweets);
+console.log("Le voici:", usersWithTweets);
 
   return (
     <div>
