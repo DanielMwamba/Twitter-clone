@@ -7,11 +7,11 @@ import { useTweets } from "../../context/TweetContext";
 
 
 
-function Tweet({tweet}) {
+function Tweet({ tweet }) {
 
- const {tweets, toogleLike} = useTweets()
+  const { tweets, toogleLike } = useTweets()
 
-  
+
   return (
     <>
       <div className="tweet">
@@ -79,9 +79,9 @@ function Tweet({tweet}) {
             </span>
 
             <span className="tweet-action like-icon">
-              <IconAction 
-                
-                toogle={() => toogleLike(tweet.id)} 
+              <IconAction
+
+                toogle={() => toogleLike(tweet.id)}
                 isLiked={tweet.isLiked}
                 icon={
                   <svg
