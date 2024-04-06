@@ -19,9 +19,9 @@ function ProfileUser({user, listTweet}) {
       </div>
       
      
-      {user.tweet.map((tweet) => (
+      {/* {user.tweet.map((tweet) => (
         <Tweet key={tweet.id} tweet={tweet}/>
-      ))}
+      ))} */}
         </main>
     )
 }
